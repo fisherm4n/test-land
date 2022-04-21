@@ -288,6 +288,7 @@
     padding: 13px 24px 13px 10px;
 
     &::placeholder {
+      font-size: 18px;
       color: #272733;
     }
   }
@@ -438,7 +439,7 @@
       border: 1px solid #FFFFFF;
       background: rgba(255, 255, 255, 0.7);
       border-radius: 5px;
-      background-image: linear-gradient(rgba(255, 255, 255, 0.7));
+      background-image: linear-gradient(rgba(255, 255, 255, 0.2));
       background-size: 70% 100%;
       background-repeat: no-repeat;
     }
@@ -567,7 +568,8 @@
     max-width: 370px;
     width: 100%;
     margin: 0 auto;
-
+    font-size: 15px;
+    font-weight: 600;
   }
 }
 
