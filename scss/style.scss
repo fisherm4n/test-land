@@ -194,6 +194,9 @@
     margin-bottom: 30px;
     text-transform: uppercase;
     @extend %lato-800;
+    .accent{
+      font-weight: 800;
+    }
   }
 
   &__title,
@@ -415,7 +418,9 @@
       align-items: center;
       margin-bottom: 20px;
       width: 100%;
-
+      p{
+        font-size: 18px;
+      }
     }
 
     output {
