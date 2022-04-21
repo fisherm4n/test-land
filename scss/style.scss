@@ -53,10 +53,12 @@
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 600;
-    &--active{
+
+    &--active {
       color: $accent2;
 
     }
+
     &:hover {
       color: $accent2;
     }
@@ -264,6 +266,7 @@
     display: flex;
     column-gap: 30px;
     margin-bottom: 30px;
+
   }
 
   &__bottom {
@@ -272,6 +275,7 @@
     margin-bottom: 52px;
 
     &-item {
+
       &:first-child {
         flex: 1 1 66.66%;
       }
@@ -289,6 +293,16 @@
     position: relative;
     max-width: 33.33%;
     height: 48px;
+    border-radius: 3px;
+
+    &:first-child {
+      height: 47.5px;
+      align-self: flex-end;
+    }
+
+    &:not(:first-child) {
+      border: 1px solid #FFFFFF;
+    }
   }
 
   &__input {
@@ -397,6 +411,7 @@
     padding: 13px 24px 13px 10px;
     font-size: 18px;
     cursor: pointer;
+    border-radius: 3px;
   }
 
   &__option:hover {
@@ -554,6 +569,7 @@
     align-items: center;
     justify-content: center;
     column-gap: 10px;
+    border-radius: 3px;
   }
 
 
