@@ -1,0 +1,32 @@
+body{
+  line-height: 1.2;
+  font-size: 16px;
+  color: $main;
+  @extend %lato-400;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+.container{
+  max-width: 1189px;
+  padding: 0 10px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+.logo {
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #fff;
+  @extend %raleway-800;
+  white-space: nowrap;
+  .accent{
+    font-weight: 800;
+  }
+}
+.link{
+  @extend %btn;
+}
+.accent{
+  color: $accent;
+  font-weight: 700;
+}
