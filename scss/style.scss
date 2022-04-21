@@ -11,9 +11,11 @@
   top: 0px;
   right: 0px;
   z-index: 2;
-  .container{
+
+  .container {
     padding: 0;
   }
+
   &__inner {
     display: flex;
     align-items: center;
@@ -29,30 +31,34 @@
       }
     }
   }
-  &__burger{
+
+  &__burger {
     display: none;
+
     &__item {
       list-style-type: none;
     }
 
   }
+
   &__list {
     display: flex;
   }
 
-  
+
 
   &__link {
     color: #fff;
     transition: color 0.3s;
     text-transform: uppercase;
     font-size: 13px;
-    
+
 
     &:hover {
       color: $accent;
     }
   }
+
   &__burger-btn {
     cursor: pointer;
   }
@@ -163,7 +169,8 @@
     border: 1px solid #6F6D7B;
     color: #6F6D7B;
     background-color: $white;
-    &:hover{
+
+    &:hover {
       background-color: $accent;
       color: $white;
     }
@@ -222,12 +229,15 @@
           content: '';
           background-image: url(../images/order/circles.svg);
           width: 110px;
-          background-size: cover;
+          background-size: contain;
+          background-repeat: no-repeat;
           height: 6px;
           top: 50px;
           z-index: 0;
           left: 0px;
-          transform: translateX(-46%);
+          -webkit-transform: translateX(-46%);
+          -ms-transform: translateX(-46%);
+          transform: translateX(-54%);
         }
       }
     }
@@ -396,6 +406,7 @@
   &__range {
     display: flex;
     flex-direction: column;
+
     &-value {
       align-self: flex-end;
       display: flex;
@@ -403,7 +414,7 @@
       align-items: center;
       margin-bottom: 20px;
       width: 100%;
-      
+
     }
 
     output {
@@ -556,42 +567,49 @@
     max-width: 370px;
     width: 100%;
     margin: 0 auto;
-  
+
   }
 }
-.footer{
+
+.footer {
   background-color: #3D4050;
   padding: 30px 0;
   color: $white;
   font-size: 13px;
-  &__inner{
+
+  &__inner {
     display: flex;
     justify-content: space-between;
   }
-  &__item{
+
+  &__item {
     display: flex;
     column-gap: 38px;
-     img {
-       width: 20px;
-       height: 20px;
-           object-fit: contain;
-     }
-    &:nth-child(2){
-      border-left:1px solid #C3C3C3;
-      border-right:1px solid #C3C3C3;
+
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+
+    &:nth-child(2) {
+      border-left: 1px solid #C3C3C3;
+      border-right: 1px solid #C3C3C3;
       padding: 0px 4%;
       margin: 0px 3%;
-     color: #C3C3C3;
-     
+      color: #C3C3C3;
+
     }
-    &-content{
+
+    &-content {
       display: flex;
       column-gap: 12px;
       align-items: center;
     }
   }
-  &__link{
-    color:$white;
+
+  &__link {
+    color: $white;
   }
 }
 
