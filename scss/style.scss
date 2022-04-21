@@ -52,7 +52,7 @@
     transition: color 0.3s;
     text-transform: uppercase;
     font-size: 13px;
-
+    font-weight: 600;
 
     &:hover {
       color: $accent;
@@ -194,7 +194,8 @@
     margin-bottom: 30px;
     text-transform: uppercase;
     @extend %lato-800;
-    .accent{
+
+    .accent {
       font-weight: 800;
     }
   }
@@ -418,7 +419,8 @@
       align-items: center;
       margin-bottom: 20px;
       width: 100%;
-      p{
+
+      p {
         font-size: 18px;
       }
     }
